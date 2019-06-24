@@ -1,7 +1,7 @@
 const { getState, updateState } = require('./store');
 
-describe('testing for object exercises', () => {
-  it('testing if getState returns whole object', () => {
+describe('store', () => {
+  it('can get state', () => {
     const store = getState();
     expect(store).toEqual({
       shirts: 5,
@@ -11,7 +11,8 @@ describe('testing for object exercises', () => {
       apples: 9
     });
   });
-  it('testing if updateState updates the object', () => {
+  
+  it('can update state', () => {
     const updateStore = updateState('shirts', 6);
     expect(updateStore).toEqual({
       shirts: 6,
