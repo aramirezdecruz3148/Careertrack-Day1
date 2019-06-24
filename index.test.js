@@ -1,4 +1,4 @@
-const createDog = require('./index');
+const createDog = require('./create-dog');
 //test suite
 describe('create dog function', () => {
 //individual test
@@ -11,3 +11,4 @@ describe('create dog function', () => {
     });
   });
 });
+
