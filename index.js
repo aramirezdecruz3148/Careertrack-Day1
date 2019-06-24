@@ -5,6 +5,4 @@ function createDog(name, age, weight) {
     weight
   };
 }
-
-const newDog = createDog('fido', 2, '30lbs');
-console.log(newDog);
+module.exports = createDog;
